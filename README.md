@@ -14,4 +14,5 @@
       1. Run: wget https://github.com/xyiquan/ImageRecognitionApp/raw/master/setupEnvAPIserver.sh
       1. Run: sh setupEnvAPIserver.sh
    1. Go to ./geni_project/apiserver/ and run "python3 apiserver.py"
+      1. Note: If there is an error about Numpy, run "pip3 uninstall numpy" a few times until there is no more numpy installations, then install by running "pip3 install --user numpy"
 1. Access the app at http://"webserver public IP":5000/
