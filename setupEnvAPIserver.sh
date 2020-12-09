@@ -1,10 +1,10 @@
 sudo apt-get update
 sudo apt-get install python3-pip
 sudo apt-get install git
-pip3 install --user numpy
 pip3 install --user flask
 pip3 install --user mxnet==1.4
 pip3 install --user onnx==1.5
+pip3 install --user numpy
 mkdir geni_project
 cd geni_project
 git init
