@@ -9,6 +9,8 @@ git init
 git remote add ImageRecognitionApp https://github.com/xyiquan/ImageRecognitionApp.git
 git fetch ImageRecognitionApp
 git checkout ImageRecognitionApp/master -- webserver/
+cd webserver
+mkdir uploads
 echo "*****"
 echo "Done. Go to ./geni_project/webserver and run: python3 webserver.py"
 echo "*****"
