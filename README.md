@@ -2,6 +2,7 @@
 
 ## Setup steps
 1. Reserve resources on GENI using Rspec file <a href="https://github.com/xyiquan/ImageRecognitionApp/raw/master/rspec_geni_project.xml">rspec_geni_project.xml</a>.
+   1. Ensure webserver has a public IP.
 1. Setup Webserver
    1. SSH into Webserver and run environment setup script:
       1. Run: wget https://github.com/xyiquan/ImageRecognitionApp/raw/master/setupEnvWebserver.sh
@@ -13,3 +14,4 @@
       1. Run: wget https://github.com/xyiquan/ImageRecognitionApp/raw/master/setupEnvAPIserver.sh
       1. Run: sh setupEnvAPIserver.sh
    1. Go to ./geni_project/apiserver/ and run "python3 apiserver.py"
+1. Access the app at http://"webserver public IP":5000/
