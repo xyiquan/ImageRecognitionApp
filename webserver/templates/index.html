@@ -6,21 +6,27 @@
 
 <body>
     <h1>Image Recognition App</h1>
-    <p>Upload a file to get it automatically classified!</p>
+    <p>Upload a file to get it automatically classified! (jpg, bmp, png accepted)</p>
     <form method="POST" action="" enctype="multipart/form-data">
         <p><input type="file" name="file"></p>
         <p><input type="submit" value="Submit"></p>
     </form>
     <hr>
-    <p>Image Category and Probability:</p>
+
     {% for file in files %}
     <img src="{{ url_for('upload', filename=file) }}" style="width: 256px">
     {% endfor %}
 
     <p>
-    {% if message %}
-    {{message}}
-    {% endif %}
+        {% if message %}
+        Image Category: {{message}}
+        {% endif %}
+    <p>
+
+    <p>
+        {% if time %}
+        Response Time from Web to API Server (sec): {{time}}
+        {% endif %}
     <p>
 
 </body>
