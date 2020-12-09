@@ -1,7 +1,7 @@
 # ImageRecognitionApp
 
 ## Setup steps
-1. Reserve resources on GENI using Rspec file <a href="https://github.com/xyiquan/ImageRecognitionApp/blob/master/rspec_geni_project.xml">rspec_geni_project.xml</a>.
+1. Reserve resources on GENI using Rspec file <a href="https://github.com/xyiquan/ImageRecognitionApp/raw/master/rspec_geni_project.xml">rspec_geni_project.xml</a>.
 1. Setup Webserver
    1. SSH into Webserver and run environment setup script:
       1. Run: wget https://github.com/xyiquan/ImageRecognitionApp/blob/master/setupEnvWebserver.sh
